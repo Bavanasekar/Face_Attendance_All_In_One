@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Face Attendance System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e40af);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 950px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #dbeafe;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #1e40af;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #bfdbfe;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            border-radius: 12px;
+            width: 220px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #dbeafe;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Face Recognition Attendance System</h1>
+
+        <p class="description">
+            Smart Attendance Management System using
+            Face Recognition, Eye Detection and Blink Detection.
+            Prevent fake and proxy attendance through face verification.
+        </p>
+
+        <a href="{{ url_for('login') }}" class="btn">
+            Get Started
+        </a>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Face Detection</h3>
+                <p>Detect registered student faces.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Eye Detection</h3>
+                <p>Detect eyes using OpenCV.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Blink Detection</h3>
+                <p>Verify live presence through blinking.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
